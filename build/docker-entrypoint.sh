@@ -19,4 +19,4 @@ load_secret DRONE_GITHUB_CLIENT ${DRONE_GITHUB_CLIENT}
 load_secret DRONE_GITHUB_SECRET ${DRONE_GITHUB_SECRET}
 load_secret DRONE_SECRET ${DRONE_SECRET}
 
-/bin/drone-server
+exec /bin/drone-server
