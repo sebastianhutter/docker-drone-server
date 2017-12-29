@@ -6,7 +6,6 @@ RUN apk add --no-cache bash
 # so we can have a simple entrypoint script running
 FROM drone/drone:0.8
 
-COPY --from=alpine /bin/sh /bin/sh
 COPY --from=alpine /bin/bash /bin/bash
 COPY --from=alpine /bin/cat /bin/cat
 # requirements for bash and cat
